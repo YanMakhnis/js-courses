@@ -1,0 +1,26 @@
+let arr = new Array 
+let arr1 = [] // то же самое, только чаще
+
+Перебирать циклами - стандартный fori , for of , forEach
+
+Получить элемент можно еще с помощью fruts.at(). При этом, fruts.at(-1) = первый элемент с конца.
+Method .pop removes last element of array. Can put it into the variable.
+Method .push adds new element after the last one in array.
+Method .shift removes first element from array
+Method .unshift adds last element from array
+
+Метод splice, може удалять сколько  надо
+-splice(2) -удалить начиная со второго
+-splice(2,3) - удалить 3 элемента начиная со второго
+-splice(0,3, "тест', 'тест2') удалить с 0 3 элемента и вставить тест и тест2
+
+Метод slice, можно копировать массивы. Типа arr.slice(0) - от нуля, до конца.
+Но работает только с примитивами, ибо копируются ссылки.
+
+Метод concat создает новые массивы, склеивая несколько массивов и даже значений.
+Метод indexOf возращает элемент(первый найденный) массива. -1, если не найдено ничего. Есть аргумент from,
+который указывает откуда искать, с какого элемента. Можно искать с конца с помощью lastIndexOf()
+
+Метод includes возращает true/false есть ли элемент/
+Методы find, findIndex, findLastIndex
+Метод map практиковать
