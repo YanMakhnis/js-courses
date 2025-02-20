@@ -105,7 +105,7 @@ const car = {
         }
     },
     setYear: function (year) {
-        if (typeof year === 'number' && year >= 1950 && year <= new Date.getFullYear()) {
+        if (typeof year === 'number' && year >= 1950 && year <= new Date().getFullYear()) {
             this.year = year
         }
     },
@@ -144,7 +144,7 @@ const car = {
 
 car.setBrand("BMW")
 car.setModel("535")
-car.setYear(1940)
+car.setYear(1951)
 car.increaseMileage(12)
 
 car.showInfo("brand")
