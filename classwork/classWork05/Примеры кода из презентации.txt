@@ -1,0 +1,97 @@
+﻿Функция-конструктор
+
+function Human(firstName, lastName) {
+    this.firstName = firstName
+    this.lastName = lastName
+}
+const vladN = new Human('Влад, 'Никитин')
+
+----------------------------
+
+Функциональный стиль
+
+function Human (firstName, lastName;) {
+    this.firstName = firstName; // Определяем свойства
+    this.lastName = lastName;
+    this.sayHello = function () { // Определяем методы
+        console.log(`Hello, I'm ${firstName}`)
+    }
+}
+
+----------------------------
+
+Прототипный стиль
+
+Human.prototype.sayHello = function () {
+      console.log(`Hello, I'm ${this.firstName}`)
+}
+
+----------------------------
+
+Human.prototype.method1 = function () { /*...*/ }
+Human.prototype.method2 = function () { /*...*/ }
+Human.prototype.method3 = function () { /*...*/ }
+
+----------------------------
+
+Object.assign(Human.prototype, {
+  method1 () { /*...*/ },
+  method2 () { /*...*/ },
+  method3 () { /*...*/ },
+})
+
+----------------------------
+
+Класс
+
+class Human {
+    constructor(firstName, lastName) {
+        this.firstName = firstName
+        this.sayHello = function { /*...*/ }
+    }
+}
+
+----------------------------
+
+Прототипы в классе
+
+class Human (firstName, lastName) {
+      constructor (firstName, lastName) { /* ... */ }
+      sayHello () {
+	console.log(`Hello, I'm ${this.firstName}`)
+      }
+}
+
+----------------------------
+
+Создание подклассов с помощью класса
+
+class Developer extends Human {
+	constructor(firstName, lastName) {
+	    super(firstName, lastName)
+            // Новые свойства подтипа
+	}
+	// Новые методы прототипа подкласса
+}
+
+----------------------------
+
+Перезапись родительского метода
+
+class Developer extends Human {
+	constructor(firstName, lastName) {
+	    super(firstName, lastName)
+            // Новые свойства подтипа
+	}
+        sayHello  = () => console.log(`Hi ! I'm a developer!`)  // Перезаписали метод
+}
+
+----------------------------
+
+Приватные методы и свойства
+
+class Human (/*...*/)  {
+        #dateOfBirth // Объявим закрытое свойство, используя символ '#'
+      constructor (firstName, lastName) { /* ... */ }
+      howOld = () => console.log(`I was born in ${this.#dateOfBirth.year}`) // и используем его
+}
