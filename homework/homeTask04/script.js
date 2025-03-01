@@ -41,30 +41,66 @@ const store = {
 
     addProduct: function () {
         let productName;
-        const categoryList = categories.map(category => `-${category}`).join("\n");
+        let categoryIndex = 1;
+        let productToAdd;
+        const categories = Object.keys(this.inventory)
+        const categoryList = categories.map(category => `${categoryIndex++}.${category}`).join("\n");
         const productCategory = prompt(`Available categories list: \n${categoryList}\nPlease insert the product category:`);
 
         if (isCorrectValue(productCategory) && categories.includes(productCategory)) {
             productName = prompt("Please insert the product name:");
             if (isCorrectValue(productName)) {
-                console.log(store.inventory[productCategory])
-                store.inventory[productCategory].push({ name: productName })
-                console.log(store.inventory)
+                productToAdd = { name: productName };
+                store.inventory[productCategory].push(productToAdd)
                 alert(`Product with name ${productName} added to category ${productCategory}`)
+                this.setPrice(productToAdd)
+                this.setQuantity(productToAdd)
             }
         } else alert("Wrong category name!")
 
     },
-    removeProduct: function () { }
+    removeProduct: function () {
+        const productName = prompt("Please insert the product name:")
+        if(!isCorrectValue(productName)){
+            return
+        }
+        let productExists = false
+        const categories = this.inventory
+        for (category in categories) {
+            const currentCutegory = categories[category]
+            const index = currentCutegory.findIndex(i => i.name == productName)
+            if (index !== -1) {
+                alert("Product was removed!")
+                productExists = true;
+                currentCutegory.splice(index, 1);
+                break;
+            }
+        }
+        if(!productExists){
+            alert("Product not found")
+        }
+    },
+
+    setPrice: function(product){
+        const price = prompt(`Please provide the price for product ${product.name}`)
+        product.price = +price
+        alert(`Set price ${price} for ${product.name}`)
+
+    },
+
+    setQuantity: function(product){
+        const quantity = prompt(`Please provide the quantity for product ${product.name}`)
+        product.quantity = +quantity
+        alert(`Set quantity ${quantity} for ${product.name}`)
+
+    }
 }
-
-const categories = Object.keys(store.inventory);
-
-store.addProduct()
-//store.inventory.meat.push({ name: "test" })
-console.log(store.inventory)
-
 
 function isCorrectValue(value) {
-    return value && value.trim().length > 0
+        return value && value.trim().length > 0
 }
+
+store.addProduct()
+// store.removeProduct()
+console.log(store.inventory)
+
