@@ -1,3 +1,5 @@
+import { isCorrectValue } from "../../utils/utils.js";
+
 const store = {
     inventory: {
         dairy: [
@@ -66,7 +68,7 @@ const store = {
         }
         let productExists = false
         const categories = this.inventory
-        for (category in categories) {
+        for (let category in categories) {
             const currentCutegory = categories[category]
             const index = currentCutegory.findIndex(i => i.name == productName)
             if (index !== -1) {
@@ -96,11 +98,8 @@ const store = {
     }
 }
 
-function isCorrectValue(value) {
-        return value && value.trim().length > 0
-}
 
-store.addProduct()
-// store.removeProduct()
+// store.addProduct()
+store.removeProduct()
 console.log(store.inventory)
 
