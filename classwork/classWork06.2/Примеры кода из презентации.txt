@@ -1,0 +1,22 @@
+﻿
+let timerId = setTimeout(func|code, [delay], [arg1], [arg2], ...);
+
+----------------------------
+
+function sayHi(phrase, who) {
+  alert( phrase + ', ' + who );
+}
+
+setTimeout(sayHi, 1000, "Привет", "Джон"); // Привет, Джон
+
+----------------------------
+
+let timerId = setTimeout(...);
+clearTimeout(timerId);
+
+----------------------------
+
+let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...);
+clearInterval(timerId);
+
+----------------------------

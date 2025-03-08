@@ -1,5 +1,5 @@
-﻿const task1= Array.from(document.querySelectorAll('p'))
-console.log(task1.find(p => p.textContent==6))
+﻿const task1 = Array.from(document.querySelectorAll('p'))
+console.log(task1.find(p => p.textContent == 6))
 
 const task2 = document.querySelectorAll('[important]')[0]
 console.log(task2)
@@ -28,8 +28,30 @@ console.log(task8)
 
 document.querySelectorAll('[id]').forEach(i => console.log(i))
 
-function countChildren(elem){
-    console.log(elem.children.length)
+function countChildren(elem) {
+    return elem.childElementCount
 }
 
-countChildren(document.body)
+// console.log(countChildren(document.body))
+
+const body = document.body
+
+body.addEventListener('click', () => {
+    let date = new Date()
+    console.log(date)
+})
+
+const button = document.querySelector('.images-wrapper button')
+button.addEventListener('click', () => alert('Click!'))
+
+const digits = document.querySelectorAll('.sector-three p')
+
+// digits.addEventListener('click', () => alert(`цифра этого <p> - ${this.innerHTML}`))
+
+
+task8.forEach((el) => {
+    el.addEventListener('click', function() {
+        console.log(this.textContent)
+        alert(this.textContent)
+    })
+})
