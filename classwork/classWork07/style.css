@@ -1,0 +1,13 @@
+html {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #4158D0 0%, #4158D0 50%, #D08DD2 50%, #D08DD2 100%), linear-gradient(to right, #F2651C 0%, #F2651C 50%, #BCC375 50%, #BCC375 100%);
+  background-size: 100% 50%;
+  background-position: center top, center bottom;
+  background-repeat: no-repeat;
+}
+
+#navigator-value {
+  padding: 10px;
+  border: 1px solid black;
+}

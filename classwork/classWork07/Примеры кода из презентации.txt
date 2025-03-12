@@ -1,0 +1,47 @@
+﻿----------------------------
+
+window.history -
+window.location
+window.innerHeight
+window.innerWidth
+window.close()
+window.matchMedia(media)
+
+----------------------------
+
+screen.height
+screen.width
+screen.orientation
+
+----------------------------
+
+location.href
+location.reload()
+
+----------------------------
+
+history.length
+history.back()
+history.forward()
+history.go(number)
+
+----------------------------
+
+navigator.cookieEnabled
+navigator.geolocation
+navigator.language
+navigator.onLine
+navigator.userAgent
+navigator.getBattery()
+
+----------------------------
+
+document.cookie
+
+----------------------------
+
+document.cookie = "user=John";
+
+----------------------------
+
+document.cookie = "user=John; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT";
