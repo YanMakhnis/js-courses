@@ -1,8 +1,7 @@
-const userStateWrapper = document.querySelector('#user-state');
-
 document.addEventListener("DOMContentLoaded", onPageLoad);
 
 function onPageLoad(event) {
+    const userStateWrapper = document.querySelector('#user-state');
     let sessionId = getCookie('sessionId');
     if(sessionId){
          userStateWrapper.textContent = "Авторизированный пользователь"
