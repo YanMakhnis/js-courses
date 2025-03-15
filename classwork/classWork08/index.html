@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Практика 7</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <table>
+    <caption>
+      Работники компании
+    </caption>
+    <thead>
+      <tr>
+        <th>Фамилия</th>
+        <th>Имя</th>
+        <th>Должность</th>
+        <th>Зарплата</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Васильев</td>
+        <td> Геннадий</td>
+        <td> Водитель</td>
+        <td> 1200</td>
+      </tr>
+      <tr>
+        <td> Ермолова</td>
+        <td> Елизавета</td>
+        <td> Курьер</td>
+        <td> 800</td>
+      </tr>
+      <tr>
+
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <caption>
+      Итоги продаж
+    </caption>
+    <thead>
+      <tr>
+        <th rowspan="3" colspan="2">Название товара</td>
+        <th colspan="8">Период</th>
+      </tr>
+      <tr>
+        <th colspan="4">2022</th>
+        <th colspan="4">2023</th>
+      </tr>
+
+      <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="2">Мебель</th>
+        <th>Шкафы</th>
+        <td></td>
+        <td>100</td>
+        <td></td>
+        <td>50</td>
+        <td></td>
+        <td>250</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Диваны</th>
+        <td></td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>120</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th rowspan="2">Посуда</th>
+        <th>Тарелки</th>
+        <td>30</td>
+        <td>15</td>
+        <td>25</td>
+        <td></td>
+        <td>100</td>
+        <td></td>
+        <td>130</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Чайники</th>
+        <td></td>
+        <td>5</td>
+        <td></td>
+        <td>15</td>
+        <td></td>
+        <td>70</td>
+        <td>
+          </th>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <form action="#" method="POST">
+    <div class="input-wrapper">
+      <div class="input-label">
+        <label for="first_name">Имя</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="Имя" type="text" id="first_name" name="first_name" required />
+      </div>
+      <div class="input-label">
+        <label for="second_name">Фамилия</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="Фамилия" type="text" id="second_name" name="second_name" required />
+      </div>
+      <div class="input-label">
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="Email" type="email" id="email" name="email" required />
+      </div>
+      <div class="input-label">
+        <label for="phone">Телефон</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="Телефон" type="tel" id="phone" name="phone" required />
+      </div>
+    </div>
+    <div id="fieldSet" class="input-field">
+      <fieldset>
+        <legend>Выберите пол:</legend>
+        <label>
+          <input type="radio" name="gender" value="male" required> Мужчина
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female"> Женщина
+        </label>
+      </fieldset>
+    </div>
+    <div class="input-wrapper">
+      <div class="input-label">
+        <label for="password">Пароль</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="Пароль" type="password" id="password" name="password" required />
+      </div>
+      <div class="input-label">
+        <label for="password2">Подтвердите пароль</label>
+      </div>
+      <div class="input-field">
+        <input placeholder="Подтвердите пароль" type="password" id="password2" name="password2" required />
+      </div>
+      <div id="countries" class="input-field">
+        <label for="countries">Страна:</label>
+        <select id="countries" name="countries">
+          <option value="Belarus">Беларусь</option>
+          <option value="Poland">Польша</option>
+          <option value="Lithuania">Литва</option>
+        </select>
+      </div>
+      <div id="conditions" class="input-field">
+        <input id="conditions" type="checkbox">
+        <label for="conditions">Я согласен с <a href='/classwork/classWork08/conditions_page.html'>условиями
+            использования</a></label>
+      </div>
+      <button type="submit">Зарегистрироваться</button>
+    </div>
+  </form>
+
+  <div class="audio-video-wrapper">
+    <div id="audio">
+      <audio controls src="/classwork/classWork08/audio_sample.mp3"></audio>
+    </div>
+    <div id="video">
+      <video width="300" height="300" controls poster="/classwork/classWork08/Обложка.jpg" src="/classwork/classWork08/video_sample.mp4"></video>
+    </div>
+  </div>
+</body>
+
+</html>
