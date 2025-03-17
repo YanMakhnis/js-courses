@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <form action="#" method="POST">
+        <div class="input-wrapper">
+            <div class="input-label">
+                <label for="first_name">Имя</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="Имя" type="text" id="first_name" name="first_name" required />
+            </div>
+            <div class="input-label">
+                <label for="second_name">Фамилия</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="Фамилия" type="text" id="second_name" name="second_name" required />
+            </div>
+            <div class="input-label">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="Email" type="email" id="email" name="email" required />
+            </div>
+            <div class="input-label">
+                <label for="phone">Телефон</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="Телефон" type="tel" id="phone" name="phone" />
+            </div>
+        </div>
+        <fieldset>
+            <legend>Выберите пол:</legend>
+            <input type="radio" id="genderMale" name="gender" value="male" required>
+            <label for="genderMale">Мужчина</label>
+            <label>
+                <input type="radio" name="gender" value="female"> Женщина
+            </label>
+        </fieldset>
+
+        <div class="input-wrapper">
+            <div class="input-label">
+                <label for="password">Пароль</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="Пароль" type="password" id="password" name="password" required />
+            </div>
+            <div class="input-label">
+                <label for="password2">Подтвердите пароль</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="Подтвердите пароль" type="password" id="password2" name="password2" required />
+            </div>
+            <div id="countries" class="input-field">
+                <label for="countries">Страна:</label>
+                <select id="countries" name="countries">
+                    <option value="BY" selected>Беларусь</option>
+                    <option value="PL">Польша</option>
+                    <option value="LT">Литва</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-wrapper">
+            <input id="conditions" type="checkbox">
+            <label for="conditions">Я согласен с <a href='/classwork/classWork08/conditions_page.html'>условиями
+                    использования</a></label>
+        </div>
+        <button type="submit">Зарегистрироваться</button>
+        </div>
+    </form>
+</body>
+
+</html>
