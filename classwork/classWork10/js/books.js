@@ -1,0 +1,173 @@
+const booksObj = [
+    {
+        id: 1,
+        title: "1984",
+        author: "George Orwell",
+        price: 15.99,
+    },
+    {
+        id: 2,
+        title: "To Kill a Mockingbird",
+        author: "Harper Lee",
+        price: 12.99,
+    },
+    {
+        id: 3,
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        price: 10.99,
+    },
+    {
+        id: 4,
+        title: "Pride and Prejudice",
+        author: "Jane Austen",
+        price: 9.99,
+    },
+    {
+        id: 5,
+        title: "The Catcher in the Rye",
+        author: "J.D. Salinger",
+        price: 14.99,
+    },
+    {
+        id: 6,
+        title: "The Hobbit",
+        author: "J.R.R. Tolkien",
+        price: 13.99,
+    },
+    {
+        id: 7,
+        title: "Fahrenheit 451",
+        author: "Ray Bradbury",
+        price: 11.99,
+    },
+    {
+        id: 8,
+        title: "Brave New World",
+        author: "Aldous Huxley",
+        price: 16.99,
+    },
+    {
+        id: 9,
+        title: "Moby Dick",
+        author: "Herman Melville",
+        price: 18.99,
+    },
+    {
+        id: 10,
+        title: "War and Peace",
+        author: "Leo Tolstoy",
+        price: 20.99,
+    },
+    {
+        id: 11,
+        title: "The Odyssey",
+        author: "Homer",
+        price: 17.99,
+    },
+    {
+        id: 12,
+        title: "Jane Eyre",
+        author: "Charlotte Brontë",
+        price: 13.49,
+    },
+    {
+        id: 13,
+        title: "The Picture of Dorian Gray",
+        author: "Oscar Wilde",
+        price: 12.49,
+    },
+    {
+        id: 14,
+        title: "Crime and Punishment",
+        author: "Fyodor Dostoevsky",
+        price: 19.99,
+    },
+    {
+        id: 15,
+        title: "The Brothers Karamazov",
+        author: "Fyodor Dostoevsky",
+        price: 21.99,
+    },
+    {
+        id: 16,
+        title: "Wuthering Heights",
+        author: "Emily Brontë",
+        price: 10.49,
+    },
+    {
+        id: 17,
+        title: "The Grapes of Wrath",
+        author: "John Steinbeck",
+        price: 15.49,
+    },
+    {
+        id: 18,
+        title: "The Old Man and the Sea",
+        author: "Ernest Hemingway",
+        price: 14.49,
+    },
+    {
+        id: 19,
+        title: "The Bell Jar",
+        author: "Sylvia Plath",
+        price: 13.99,
+    },
+    {
+        id: 20,
+        title: "The Road",
+        author: "Cormac McCarthy",
+        price: 16.49,
+    },
+    {
+        id: 21,
+        title: "The Alchemist",
+        author: "Paulo Coelho",
+        price: 11.99,
+    },
+    {
+        id: 22,
+        title: "The Fault in Our Stars",
+        author: "John Green",
+        price: 12.99,
+    },
+    {
+        id: 23,
+        title: "The Hunger Games",
+        author: "Suzanne Collins",
+        price: 10.99,
+    },
+    {
+        id: 24,
+        title: "Divergent",
+        author: "Veronica Roth",
+        price: 9.99,
+    },
+    {
+        id: 25,
+        title: "Harry Potter and the Sorcerer's Stone",
+        author: "J.K. Rowling",
+        price: 19.99,
+    },
+    {
+        id: 26,
+        title: "The Da Vinci Code",
+        author: "Dan Brown",
+        price: 14.99,
+    },
+    {
+        id: 27,
+        title: "Gone Girl",
+        author: "Gillian Flynn",
+        price: 13.49,
+    },
+    {
+        id: 28,
+        title: "Life of Pi",
+        author: "Yann Martel",
+        price: 15.49,
+    },
+];
+
+
+export default booksObj;
