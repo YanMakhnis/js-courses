@@ -23,7 +23,7 @@ class PageTitle extends React.Component{
 
 class ButtonsList extends React.Component{
     render(){
-        list items = this.props.names
+         items = this.props.names
     }
 }
 
