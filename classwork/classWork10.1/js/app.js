@@ -55,7 +55,7 @@ class PageSubtitle extends React.Component {
 class ButtonsList extends React.Component {
     render() {
         let items = this.props.names.map((name) => {
-            return <ButtonItem clickHandler={this.props.clickHandler}>{name}</ButtonItem>
+            return <ButtonItem key={name} clickHandler={this.props.clickHandler}>{name}</ButtonItem>
         })
         return items
     }
@@ -72,7 +72,7 @@ class ListWrapper extends React.Component {
     render() {
         if (this.props.selected) {
             let items = this.props.toDoList[this.props.selected].map((elem) => {
-                return <ListItem changeHandler={this.props.changeHandler}>{elem}</ListItem>
+                return <ListItem key={elem.id} changeHandler={this.props.changeHandler}>{elem}</ListItem>
             })
 
             return <ul>{items}</ul>
