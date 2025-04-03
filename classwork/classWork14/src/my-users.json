@@ -1,0 +1,13 @@
+[
+  { "id": 1, "name": "Василий", "role": "user" },
+  { "id": 5, "name": "Анвар", "role": "admin" },
+  { "id": 2, "name": "Игорь", "role": "user" },
+  { "id": 3, "name": "Елена", "role": "user" },
+  { "id": 4, "name": "Владислав", "role": "user" },
+  { "id": 6, "name": "Виталий", "role": "user" },
+  { "id": 8, "name": "Николай", "role": "admin" },
+  { "id": 9, "name": "Светлана", "role": "user" },
+  { "id": 7, "name": "Андраник", "role": "user" },
+  { "id": 11, "name": "Джеймс", "role": "admin" },
+  { "id": 10, "name": "Гульнара", "role": "user" }
+]

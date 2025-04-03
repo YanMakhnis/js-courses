@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.body {
+  min-height: 100%;
+  background-color: lightblue;
+  /* -------- */
+}
+
+.header {
+  background-color: lightskyblue;
+  padding: 50px;
+  /* -------- */
+}
+
+.column-left {
+  background-color: lightcoral;
+  padding: 50px;
+  /* -------- */
+}
+
+.main {
+  background-color: lightgreen;
+  padding: 50px;
+  /* -------- */
+}
+
+.column-right {
+  background-color: lightsalmon;
+  padding: 50px;
+  /* -------- */
+}
+
+.footer {
+  background-color: lightgray;
+  padding: 50px;
+  /* -------- */
+}

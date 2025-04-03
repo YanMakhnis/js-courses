@@ -1,0 +1,29 @@
+.box {
+  position: absolute;
+  border: 1px solid #333333;
+}
+
+.small {
+  width: 100px;
+  height: 100px;
+  background: #4527a0;
+}
+
+.medium {
+  width: 150px;
+  height: 150px;
+  background: #3f51b5;
+  opacity: 0.8;      
+}
+
+.large {
+  width: 200px;
+  height: 200px;
+  background: #1565c0;
+  opacity: 0.6;      
+}
+
+.box:hover {
+  transform: scale(1.1); /* Увеличиваем квадрат при наведении */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Добавляем тень при наведении */
+}
