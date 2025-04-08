@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="player">
+      <div class="video">
+        <video src="video_1.mp4" poster="video_1.jpg"></video>
+      </div>
+      <div class="controls">
+        <div class="duration-bar-wrapper">
+          <div class="duration-bar">
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="buttons-left">
+          <button class="previous" title="Предыдущее видео">
+            Предыдущее видео
+          </button>
+          <button class="stop" title="Остановить">Остановить</button>
+          <button class="play" title="Смотреть" data-alt-title="Пауза">
+            Смотреть
+          </button>
+          <button class="next" title="Следующее видео">Следующее видео</button>
+          <div class="volume-wrapper">
+            <button
+              class="volume"
+              title="Отключение звука"
+              data-alt-title="Включение звука"
+            >
+              Отключение звука
+            </button>
+            <div class="volume-bar-wrapper">
+              <div class="volume-bar">
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-right">
+          <button
+            class="fullscreen"
+            title="Во весь экран"
+            data-alt-title="Выход из полноэкранного режима"
+          >
+            Во весь экран
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

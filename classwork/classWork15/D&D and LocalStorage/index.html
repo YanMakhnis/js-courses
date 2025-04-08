@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практика 16</title>
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <script defer type="module" src="static/js/main.js"></script>
+  </head>
+  <body>
+    <h1>Jira Board</h1>
+    <button class="open-modal-btn">Добавить тикет</button>
+
+    <div class="board" id="board"></div>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <button class="close-modal-btn">X</button>
+        <h3>Новый тикет</h3>
+        <input type="text" id="newTitle" placeholder="Заголовок" required />
+        <textarea id="newDesc" placeholder="Описание" rows="3"></textarea>
+        <button class="add-ticket-btn">Добавить</button>
+      </div>
+    </div>
+  </body>
+</html>
